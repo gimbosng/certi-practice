@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Gravity", "Gravity\Gravity.
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BabyGinGame", "BabyGinGame\BabyGinGame.vcxproj", "{CC6612B8-CD23-47F6-A6CD-8F9F41E97582}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SubsetBit", "SubsetBit\SubsetBit.vcxproj", "{C2E74839-5FD8-42BA-8E89-6C6AE9164396}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{CC6612B8-CD23-47F6-A6CD-8F9F41E97582}.Release|x64.Build.0 = Release|x64
 		{CC6612B8-CD23-47F6-A6CD-8F9F41E97582}.Release|x86.ActiveCfg = Release|Win32
 		{CC6612B8-CD23-47F6-A6CD-8F9F41E97582}.Release|x86.Build.0 = Release|Win32
+		{C2E74839-5FD8-42BA-8E89-6C6AE9164396}.Debug|x64.ActiveCfg = Debug|x64
+		{C2E74839-5FD8-42BA-8E89-6C6AE9164396}.Debug|x64.Build.0 = Debug|x64
+		{C2E74839-5FD8-42BA-8E89-6C6AE9164396}.Debug|x86.ActiveCfg = Debug|Win32
+		{C2E74839-5FD8-42BA-8E89-6C6AE9164396}.Debug|x86.Build.0 = Debug|Win32
+		{C2E74839-5FD8-42BA-8E89-6C6AE9164396}.Release|x64.ActiveCfg = Release|x64
+		{C2E74839-5FD8-42BA-8E89-6C6AE9164396}.Release|x64.Build.0 = Release|x64
+		{C2E74839-5FD8-42BA-8E89-6C6AE9164396}.Release|x86.ActiveCfg = Release|Win32
+		{C2E74839-5FD8-42BA-8E89-6C6AE9164396}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
