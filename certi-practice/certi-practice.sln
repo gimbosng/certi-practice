@@ -11,6 +11,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SubsetBit", "SubsetBit\Subs
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Ladder", "Ladder\Ladder.vcxproj", "{22A9C34A-4672-4981-9343-401B1A7B9FDC}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Dump", "Dump\Dump.vcxproj", "{A772CEEC-96BD-4E80-A1DD-0B4502646ED9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -51,6 +53,14 @@ Global
 		{22A9C34A-4672-4981-9343-401B1A7B9FDC}.Release|x64.Build.0 = Release|x64
 		{22A9C34A-4672-4981-9343-401B1A7B9FDC}.Release|x86.ActiveCfg = Release|Win32
 		{22A9C34A-4672-4981-9343-401B1A7B9FDC}.Release|x86.Build.0 = Release|Win32
+		{A772CEEC-96BD-4E80-A1DD-0B4502646ED9}.Debug|x64.ActiveCfg = Debug|x64
+		{A772CEEC-96BD-4E80-A1DD-0B4502646ED9}.Debug|x64.Build.0 = Debug|x64
+		{A772CEEC-96BD-4E80-A1DD-0B4502646ED9}.Debug|x86.ActiveCfg = Debug|Win32
+		{A772CEEC-96BD-4E80-A1DD-0B4502646ED9}.Debug|x86.Build.0 = Debug|Win32
+		{A772CEEC-96BD-4E80-A1DD-0B4502646ED9}.Release|x64.ActiveCfg = Release|x64
+		{A772CEEC-96BD-4E80-A1DD-0B4502646ED9}.Release|x64.Build.0 = Release|x64
+		{A772CEEC-96BD-4E80-A1DD-0B4502646ED9}.Release|x86.ActiveCfg = Release|Win32
+		{A772CEEC-96BD-4E80-A1DD-0B4502646ED9}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
