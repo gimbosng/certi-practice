@@ -17,6 +17,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Palindrome", "Palindrome\Pa
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PatternMatch", "PatternMatch\PatternMatch.vcxproj", "{CB0E85FC-7B5C-429E-AFFD-E2DF1881CED4}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DFS", "DFS\DFS.vcxproj", "{B2DA51EB-C2B5-466E-8143-97CA4DD92F03}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -81,6 +83,14 @@ Global
 		{CB0E85FC-7B5C-429E-AFFD-E2DF1881CED4}.Release|x64.Build.0 = Release|x64
 		{CB0E85FC-7B5C-429E-AFFD-E2DF1881CED4}.Release|x86.ActiveCfg = Release|Win32
 		{CB0E85FC-7B5C-429E-AFFD-E2DF1881CED4}.Release|x86.Build.0 = Release|Win32
+		{B2DA51EB-C2B5-466E-8143-97CA4DD92F03}.Debug|x64.ActiveCfg = Debug|x64
+		{B2DA51EB-C2B5-466E-8143-97CA4DD92F03}.Debug|x64.Build.0 = Debug|x64
+		{B2DA51EB-C2B5-466E-8143-97CA4DD92F03}.Debug|x86.ActiveCfg = Debug|Win32
+		{B2DA51EB-C2B5-466E-8143-97CA4DD92F03}.Debug|x86.Build.0 = Debug|Win32
+		{B2DA51EB-C2B5-466E-8143-97CA4DD92F03}.Release|x64.ActiveCfg = Release|x64
+		{B2DA51EB-C2B5-466E-8143-97CA4DD92F03}.Release|x64.Build.0 = Release|x64
+		{B2DA51EB-C2B5-466E-8143-97CA4DD92F03}.Release|x86.ActiveCfg = Release|Win32
+		{B2DA51EB-C2B5-466E-8143-97CA4DD92F03}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
