@@ -3,40 +3,20 @@
 
 #include <stdio.h>
 
-int stack[8] = { 0, };
-int top = -1;
 int visited[8] = { 0, };
 int arr[8][8] = { 0, };
 
-void push(int value)
-{
-    printf("%d", value);
-    stack[++top] = value;
-    visited[value] = 1;
-    return;
-}
-
-void pop()
-{
-    top--;
-    return;
-}
-
 void dfs(int value)
 {
-    push(value);
+    printf("%d", value);
+    visited[value] = 1;
 
-    while (top >= 0)
+    for (int i = 1; i < 8; i++)
     {
-        for (int i = 1; i < 8; i++)
+        if (visited[i] == 0 && arr[value][i] == 1)
         {
-            if (visited[i] == 0 && arr[stack[top]][i] == 1)
-            {
-                push(i);
-                i = 1;
-            }
+            dfs(i);
         }
-        pop();
     }
 }
 
