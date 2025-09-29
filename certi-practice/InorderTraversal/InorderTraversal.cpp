@@ -56,7 +56,7 @@ int main()
             }
         }
 
-        solve(1);
+        solve(1);  
         printf("\n");
     }
 
