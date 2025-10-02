@@ -103,7 +103,37 @@ void solve(int v)
 
 int main()
 {
-    
+    int testCase;
+
+    scanf_s("%d", &testCase);
+
+    for (int i = 0; i < testCase; i++)
+    {
+        scanf_s("%d", &count);
+
+        for (int j = 0; j < count; j++)
+        {
+            input();
+        }
+        state = 1;
+        solve(1);
+
+        printf("#%d", testCase);
+        if (state == 1)
+            printf("1\n");
+        else
+            printf("0\n");
+
+        for (int n = 0; n < 1001; n++)
+        {
+            Node[n].left = 0;
+            Node[n].right = 0;
+            Node[n].opp = ' ';
+            Node[n].value = 0;
+        }
+    }
+
+    return 0;
 }
 
 // 프로그램 실행: <Ctrl+F5> 또는 [디버그] > [디버깅하지 않고 시작] 메뉴

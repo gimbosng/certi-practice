@@ -33,6 +33,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "InorderTraversal", "Inorder
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "InorderTraversalHeap", "ConsoleApplication2\ConsoleApplication2.vcxproj", "{AE4763F4-3035-44E4-9DF6-E1FCE52F0372}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Validation", "Validation\Validation.vcxproj", "{AF46C194-1023-41D1-9F92-25F9CE3F12A0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -161,6 +163,14 @@ Global
 		{AE4763F4-3035-44E4-9DF6-E1FCE52F0372}.Release|x64.Build.0 = Release|x64
 		{AE4763F4-3035-44E4-9DF6-E1FCE52F0372}.Release|x86.ActiveCfg = Release|Win32
 		{AE4763F4-3035-44E4-9DF6-E1FCE52F0372}.Release|x86.Build.0 = Release|Win32
+		{AF46C194-1023-41D1-9F92-25F9CE3F12A0}.Debug|x64.ActiveCfg = Debug|x64
+		{AF46C194-1023-41D1-9F92-25F9CE3F12A0}.Debug|x64.Build.0 = Debug|x64
+		{AF46C194-1023-41D1-9F92-25F9CE3F12A0}.Debug|x86.ActiveCfg = Debug|Win32
+		{AF46C194-1023-41D1-9F92-25F9CE3F12A0}.Debug|x86.Build.0 = Debug|Win32
+		{AF46C194-1023-41D1-9F92-25F9CE3F12A0}.Release|x64.ActiveCfg = Release|x64
+		{AF46C194-1023-41D1-9F92-25F9CE3F12A0}.Release|x64.Build.0 = Release|x64
+		{AF46C194-1023-41D1-9F92-25F9CE3F12A0}.Release|x86.ActiveCfg = Release|Win32
+		{AF46C194-1023-41D1-9F92-25F9CE3F12A0}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
