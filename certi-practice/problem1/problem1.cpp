@@ -1,18 +1,37 @@
 ﻿// problem1.cpp : 이 파일에는 'main' 함수가 포함됩니다. 거기서 프로그램 실행이 시작되고 종료됩니다.
 //
 
-#include <stdio.h>
+#include <iostream>
+#include <vector>
+using namespace std;
 
 int main()
 {
-	int T;
-	setbuf(stdout, NULL);
-	scanf("%d", &T);
+    int T;
+    cin >> T;  // 테스트 케이스 수
 
-	for (int i = 1; i <= T; i++)
-	{
+    for (int t = 0; t < T; ++t) {
+        int test_case_num;
+        cin >> test_case_num;
 
-	}
+        vector<int> freq(101, 0);  // 점수는 0~100 사이
+        for (int i = 0; i < 1000; ++i) {
+            int score;
+            cin >> score;
+            freq[score]++;
+        }
+
+        int mode = 0;
+        for (int i = 0; i <= 100; ++i) {
+            if (freq[i] >= freq[mode]) {
+                mode = i;  // 더 높은 점수를 우선 선택
+            }
+        }
+
+        cout << "#" << test_case_num << " " << mode << endl;
+    }
+
+    return 0;
 }
 
 // 프로그램 실행: <Ctrl+F5> 또는 [디버그] > [디버깅하지 않고 시작] 메뉴
