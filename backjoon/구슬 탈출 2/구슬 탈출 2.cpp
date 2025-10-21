@@ -1,20 +1,89 @@
-﻿// 구슬 탈출 2.cpp : 이 파일에는 'main' 함수가 포함됩니다. 거기서 프로그램 실행이 시작되고 종료됩니다.
-//
+﻿#include <iostream>
+#include <queue>
+#include <tuple>
+#include <cstring>
+using namespace std;
 
-#include <iostream>
+const int MAX = 10;
+char board[MAX][MAX];
+bool visited[MAX][MAX][MAX][MAX];
+int N, M;
 
-int main()
-{
-    std::cout << "Hello World!\n";
+// 상, 하, 좌, 우
+int dx[4] = { -1, 1, 0, 0 };
+int dy[4] = { 0, 0, -1, 1 };
+
+// 구슬 이동 함수
+pair<pair<int, int>, int> move(int x, int y, int dir) {
+    int cnt = 0;
+    while (true) {
+        if (board[x + dx[dir]][y + dy[dir]] == '#' || board[x][y] == 'O') break;
+        x += dx[dir];
+        y += dy[dir];
+        cnt++;
+    }
+    return make_pair(make_pair(x, y), cnt);
 }
 
-// 프로그램 실행: <Ctrl+F5> 또는 [디버그] > [디버깅하지 않고 시작] 메뉴
-// 프로그램 디버그: <F5> 키 또는 [디버그] > [디버깅 시작] 메뉴
+int bfs(int rx, int ry, int bx, int by) {
+    queue<tuple<int, int, int, int, int>> q;
+    q.push(make_tuple(rx, ry, bx, by, 0));
+    visited[rx][ry][bx][by] = true;
 
-// 시작을 위한 팁: 
-//   1. [솔루션 탐색기] 창을 사용하여 파일을 추가/관리합니다.
-//   2. [팀 탐색기] 창을 사용하여 소스 제어에 연결합니다.
-//   3. [출력] 창을 사용하여 빌드 출력 및 기타 메시지를 확인합니다.
-//   4. [오류 목록] 창을 사용하여 오류를 봅니다.
-//   5. [프로젝트] > [새 항목 추가]로 이동하여 새 코드 파일을 만들거나, [프로젝트] > [기존 항목 추가]로 이동하여 기존 코드 파일을 프로젝트에 추가합니다.
-//   6. 나중에 이 프로젝트를 다시 열려면 [파일] > [열기] > [프로젝트]로 이동하고 .sln 파일을 선택합니다.
+    while (!q.empty()) {
+        int crx, cry, cbx, cby, depth;
+        tie(crx, cry, cbx, cby, depth) = q.front(); q.pop();
+        if (depth >= 10) return -1;
+
+        for (int dir = 0; dir < 4; ++dir) {
+            auto red = move(crx, cry, dir);
+            auto blue = move(cbx, cby, dir);
+            int nrx = red.first.first, nry = red.first.second, rcnt = red.second;
+            int nbx = blue.first.first, nby = blue.first.second, bcnt = blue.second;
+
+            if (board[nbx][nby] == 'O') continue;
+            if (board[nrx][nry] == 'O') return depth + 1;
+
+            if (nrx == nbx && nry == nby) {
+                if (rcnt > bcnt) {
+                    nrx -= dx[dir];
+                    nry -= dy[dir];
+                }
+                else {
+                    nbx -= dx[dir];
+                    nby -= dy[dir];
+                }
+            }
+
+            if (!visited[nrx][nry][nbx][nby]) {
+                visited[nrx][nry][nbx][nby] = true;
+                q.push(make_tuple(nrx, nry, nbx, nby, depth + 1));
+            }
+        }
+    }
+
+    return -1;
+}
+
+int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+
+    cin >> N >> M;
+    int rx, ry, bx, by;
+
+    for (int i = 0; i < N; ++i) {
+        for (int j = 0; j < M; ++j) {
+            cin >> board[i][j];
+            if (board[i][j] == 'R') {
+                rx = i; ry = j;
+            }
+            else if (board[i][j] == 'B') {
+                bx = i; by = j;
+            }
+        }
+    }
+
+    cout << bfs(rx, ry, bx, by) << '\n';
+    return 0;
+}
