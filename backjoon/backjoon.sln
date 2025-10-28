@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "구슬 탈출 2", "구슬 �
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "2048 (Easy)", "2048 (Easy)\2048 (Easy).vcxproj", "{BDB2315A-D685-49A8-B54F-3B3540DA69FF}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "뱀", "뱀\뱀.vcxproj", "{5129C107-FBF5-4D3B-83F5-F0F5D6DF39FF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{BDB2315A-D685-49A8-B54F-3B3540DA69FF}.Release|x64.Build.0 = Release|x64
 		{BDB2315A-D685-49A8-B54F-3B3540DA69FF}.Release|x86.ActiveCfg = Release|Win32
 		{BDB2315A-D685-49A8-B54F-3B3540DA69FF}.Release|x86.Build.0 = Release|Win32
+		{5129C107-FBF5-4D3B-83F5-F0F5D6DF39FF}.Debug|x64.ActiveCfg = Debug|x64
+		{5129C107-FBF5-4D3B-83F5-F0F5D6DF39FF}.Debug|x64.Build.0 = Debug|x64
+		{5129C107-FBF5-4D3B-83F5-F0F5D6DF39FF}.Debug|x86.ActiveCfg = Debug|Win32
+		{5129C107-FBF5-4D3B-83F5-F0F5D6DF39FF}.Debug|x86.Build.0 = Debug|Win32
+		{5129C107-FBF5-4D3B-83F5-F0F5D6DF39FF}.Release|x64.ActiveCfg = Release|x64
+		{5129C107-FBF5-4D3B-83F5-F0F5D6DF39FF}.Release|x64.Build.0 = Release|x64
+		{5129C107-FBF5-4D3B-83F5-F0F5D6DF39FF}.Release|x86.ActiveCfg = Release|Win32
+		{5129C107-FBF5-4D3B-83F5-F0F5D6DF39FF}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
