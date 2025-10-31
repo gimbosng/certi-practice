@@ -1,15 +1,14 @@
 ﻿#include <iostream>
-#include <vector>
 using namespace std;
 
 int N, M, x, y, K;
-vector<vector<int>> board;
-vector<int> dice(6); // 주사위 면: top, bottom, left, right, front, back
+int map[20][20];
+int dice[6]; // 0: top, 1: bottom, 2: left, 3: right, 4: front, 5: back
 int dx[4] = { 0, 0, -1, 1 }; // 동, 서, 북, 남
 int dy[4] = { 1, -1, 0, 0 };
 
 void roll(int dir) {
-    int temp[6] = { 0 };
+    int temp[6];
     for (int i = 0; i < 6; ++i) temp[i] = dice[i];
 
     if (dir == 0) { // 동
@@ -43,10 +42,9 @@ int main() {
     cin.tie(nullptr);
 
     cin >> N >> M >> x >> y >> K;
-    board.resize(N, vector<int>(M));
     for (int i = 0; i < N; ++i)
         for (int j = 0; j < M; ++j)
-            cin >> board[i][j];
+            cin >> map[i][j];
 
     for (int i = 0; i < K; ++i) {
         int cmd;
@@ -61,12 +59,12 @@ int main() {
         x = nx;
         y = ny;
 
-        if (board[x][y] == 0) {
-            board[x][y] = dice[1]; // 바닥면
+        if (map[x][y] == 0) {
+            map[x][y] = dice[1]; // 바닥면
         }
         else {
-            dice[1] = board[x][y];
-            board[x][y] = 0;
+            dice[1] = map[x][y];
+            map[x][y] = 0;
         }
 
         cout << dice[0] << '\n'; // 윗면 출력
