@@ -15,6 +15,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "주사위 굴리기", "주�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "테트로미노", "테트로미노\테트로미노.vcxproj", "{01AD273F-3155-4647-824A-D6BB3F4B24D0}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "퇴사", "퇴사\퇴사.vcxproj", "{CBEAF3E7-B09E-41F5-973D-D8746D94491E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -71,6 +73,14 @@ Global
 		{01AD273F-3155-4647-824A-D6BB3F4B24D0}.Release|x64.Build.0 = Release|x64
 		{01AD273F-3155-4647-824A-D6BB3F4B24D0}.Release|x86.ActiveCfg = Release|Win32
 		{01AD273F-3155-4647-824A-D6BB3F4B24D0}.Release|x86.Build.0 = Release|Win32
+		{CBEAF3E7-B09E-41F5-973D-D8746D94491E}.Debug|x64.ActiveCfg = Debug|x64
+		{CBEAF3E7-B09E-41F5-973D-D8746D94491E}.Debug|x64.Build.0 = Debug|x64
+		{CBEAF3E7-B09E-41F5-973D-D8746D94491E}.Debug|x86.ActiveCfg = Debug|Win32
+		{CBEAF3E7-B09E-41F5-973D-D8746D94491E}.Debug|x86.Build.0 = Debug|Win32
+		{CBEAF3E7-B09E-41F5-973D-D8746D94491E}.Release|x64.ActiveCfg = Release|x64
+		{CBEAF3E7-B09E-41F5-973D-D8746D94491E}.Release|x64.Build.0 = Release|x64
+		{CBEAF3E7-B09E-41F5-973D-D8746D94491E}.Release|x86.ActiveCfg = Release|Win32
+		{CBEAF3E7-B09E-41F5-973D-D8746D94491E}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
